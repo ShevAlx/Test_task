@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-button{
+button, input{
 	outline: none;
 	border: none; 
 	background: transparent;
@@ -22,6 +22,20 @@ a{
   display: flex;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	line-height: 1.1em;
+	letter-spacing: 0.02em;
+	margin: 0;
+}
+
+p {
+	line-height: 1.75em;
+	letter-spacing: 0.02em;
+	font-weight: 400;
+	margin: 0;
+}
+
 /* Welcome */
 
 .welcome{
@@ -35,7 +49,7 @@ a{
 }
 
 .welcome__name{
-font: 700 16px 'Inter';
+  font: 700 16px 'Inter';
 }
 
 .welcome__btn{
@@ -58,7 +72,7 @@ font: 700 16px 'Inter';
 }
 
 .header__btn{
-font: 600 16px 'Montserrat';
+  font: 600 16px 'Montserrat';
 }
 
 .header__btn:not(:last-of-type){
@@ -86,6 +100,7 @@ font: 600 16px 'Montserrat';
 
 .banner__img{
   height: 50vh;
+  max-height: 532px;
   width: 100%;
   object-fit: cover;
   border-radius: 24px;
@@ -93,13 +108,13 @@ font: 600 16px 'Montserrat';
 
 .banner__wrapper{
   position: absolute;
-  top: 15%;
+  top: 7vh;
   left: 7%;
   max-width: 588px;
 }
 
 .banner__title{
-font: 700 64px 'Space Grotesk';
+  font: 700 64px 'Space Grotesk';
   color: #fff;
 }
 
@@ -112,7 +127,92 @@ font: 700 64px 'Space Grotesk';
 }
 
 .banner__text{
-font: 600 16px 'Montserrat';
+  font: 600 16px 'Montserrat';
   color: #fff;
+}
 
+.advantages{
+  display: flex;
+  margin-top: 60px;
+}
+
+.advantages__block{
+  max-width: 470px;
+}
+
+.advantages__block:first-of-type{
+  margin-right: 24px;
+}
+
+.advantages__icon{
+  padding: 22px;
+  background: rgba(0, 133, 255, 0.1);
+  border-radius: 12px;
+}
+
+.advantages__title{
+  font: 700 24px 'Space Grotesk';
+  margin-top: 24px;
+  max-height: 62px;
+  height: 100%;
+}
+
+.advantages__text{
+  font: 400 16px 'Space Grotesk';
+  margin-top: 24px;
+}
+
+.main .container{
+  display: flex;
+}
+
+.request{
+  margin-left: 40px;
+  max-width: 389px;
+  padding: 0 40px;
+  text-align: center;
+  background: rgba(0, 133, 255, 0.1);
+  border-radius: 24px;
+}
+
+.request__title{
+  font: 700 36px 'Space Grotesk';
+  margin-top: 20vh;
+}
+
+.request__text{
+  font: 400 16px 'Space Grotesk';
+  max-width: 340px;
+  margin-top: 12px;
+}
+
+.request__input{
+  background: #FFFFFF;
+  padding: 20px 0 20px 16px;
+  border: 1px solid #CED2D6;
+  border-radius: 12px;
+  margin-top: 76px;
+  width: 266px;
+  position: relative;
+}
+
+.request__trigger{
+  position: absolute;
+  font: 700 12px 'Space Grotesk';
+  color: #000;  
+  background: #FFCB46;
+  border-radius: 8px 8px 8px 0px;
+  padding: 6px 12px;
+  margin: 55px 0 0 -40px;
+}
+
+.request__btn{
+  display: block;
+  margin: 24px auto 0;
+  background: #0085FF;
+  color: #FFFFFF;
+  font: 600 16px 'Montserrat';
+  padding: 20px 88px;
+  width: 282px;
+  border-radius: 12px;
 }
