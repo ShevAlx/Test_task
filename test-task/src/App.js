@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Footer from './footer';
 import Header from './header';
 import Main from './main';
 import Welcome from './welcome';
@@ -10,6 +11,7 @@ const App = () => {
       <Welcome />
       <Header />
       <Main />
+      <Footer />
     </div>  
   ); 
 }
