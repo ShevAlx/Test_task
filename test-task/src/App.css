@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.container{
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+	outline: none;
+	border: none; 
+	background: transparent;
+	font-family: inherit;
+  font-weight: inherit;
+  flex-shrink: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none;
+  color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Welcome */
+
+.welcome{
+  background: rgba(111, 209, 86, 0.25);
+  padding: 20px 0;
+}
+
+.welcome .container{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome__name{
+font: 700 16px 'Inter';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome__btn{
+  margin-left: auto;
+}
+
+/* Header */
+
+.header{
+  margin-top: 40px;
+}
+
+.header .container{
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation{
+  margin-left: auto;
+}
+
+.header__btn{
+font: 600 16px 'Montserrat';
+}
+
+.header__btn:not(:last-of-type){
+  margin-right: 36px;
+}
+
+.header__btn:last-of-type{
+  color: #0085FF;
+  padding: 12px 24px;
+  width: 100px;
+  height: 44px;
+  background: rgba(0, 133, 255, 0.1);
+  border-radius: 12px;
 }
